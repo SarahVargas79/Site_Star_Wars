@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formatação</title>
+		
+		<!-- Definição de codificação de caracteres. Recomenda-se usar sempre UTF-8 -->
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		
+		<!-- Título centralizado -->
+		<h1 align="center">
+		<a	href="../index.html">Início |</a>
+		<a	href="pagina2.html">Página 2 |</a>
+		<a	href="pagina3.html">Página 3 |</a>
+		<a	href="pagina4.html">Página 4 |</a>
+		<a	href="pagina5.html">Página 5 |</a>		
+		<a	href="pagina6.html">Página 6 </a>		
+		</h1>
+		
+		<!-- Elemento de linha horizontal -->
+		<hr>
+			<h1>Trabalhando com Formulário</h1>
+			<!--form cria um bloco para que tags de formulário e seus dados seja agrupados e encaminhados para outro documento, em conjunto-->
+			<form action="cadastro.php" method="post"><!--action é para onde vai se mandar esse formulário. method como vai se enviar-->
+				<h2>Elementos Input</h2>
+				<br>
+					<h3>Campo de Texto</h3>
+					<label>Seu nome:
+					<!--input campo que se pode escrever dentro-->
+					<input type="text" name="nome"/><!--Restringe coisas que as pessoas escrevem-->
+					</label>
+					<br>
+					<br>
+					<label>Seu sobrenome:
+					<input type="text" name="sobrenome"/>
+					</label>
+					<br>
+					<br>
+					<label>Senha:
+					<input type="password" name="senha">
+					</label>
+					<br>
+					<!--Só tem uma opção-->
+					<h3>Campo Radio</h3>
+					<label>
+					<input type="radio" name="tipo" value="PF"/>Pessoa Física
+					</label>
+					<label>
+					<input type="radio" name="tipo" value="PJ">Pessoa Jurídica
+					</label>
+					<!--Pode colocar mais de uma opção-->
+					<h3>Campo Checkbox</h3>
+					<label>
+					<input type="checkbox" name="CNH" value="cnh"/>
+					Possui CNH
+					</label>
+					<label>
+					<input type="checkbox" name="passaporte" value="passaporte"/>
+					Possui passaporte
+					</label>
+					<br>
+					<br>
+					<label>Campo de upload de arquivo
+					<input type="file" name="foto" accept="image/*"/><!--accept o tipo, * pega qualquer tipo de extensão.-->
+					</label>
+					<br>
+					<br>
+					<!--Campo de texto, longo-->
+					<h2>Elemento textarea</h2>
+					<textarea name="obs" rows="4" cols="50"></textarea>
+					<h2>Elemento select</h2>
+					<select name="carro">
+					<option value="fusca">Fusca</option>
+					<option value="fiat147">Fiat 147</option>
+					<option value="opala">Opala</option>
+					</select>
+					<br>
+					<br>
+					<h3>Botão Limpar</h3>
+					<input type="reset" value="Limpar"/>
+					<h3>Botão Enviar</h3>
+					<input type="submit" value="Enviar"/>
+			</form>
+		<hr>
+		<br>
+		<a href="https://pt-br.facebook.com/" target="black">
+		<img src="../imagens/logoface.png" alt="Facebook" width="68px" height="68px" 
+		align="left" hspace="8" title="Facebook"
+		</a>
+		<a href="https://www.instagram.com/" target="black">
+		<img src="../imagens/logoinst.png" alt="Instagram" width="68px" height="68px" 
+		align="left" hspace="8" title="Instagram"
+		</a>
+		<a href="https://twitter.com/login?lang=pt" target="black">
+		<img src="../imagens/logotwi.png" alt="Twitter" width="68px" height="68px" 
+		align="left" hspace="8" title="Twitter"
+		</a>
+		
+	</body>
+</html>
